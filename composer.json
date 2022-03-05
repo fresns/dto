@@ -1,5 +1,6 @@
 {
     "name": "fresns/dto",
+    "type": "library",
     "description": "Fresns data transfer object extension package for easy generation of data rules and inspection of transfer data. Works with Laravel projects.",
     "keywords": ["fresns", "dto", "laravel-dto"],
     "license": "Apache-2.0",
