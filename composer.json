@@ -1,0 +1,81 @@
+{
+    "name": "fresns/dto",
+    "description": "Fresns data transfer object extension package for easy generation of data rules and inspection of transfer data. Works with Laravel projects.",
+    "keywords": ["fresns", "dto", "laravel-dto"],
+    "license": "Apache-2.0",
+    "homepage": "https://fresns.org",
+    "support": {
+        "issues": "https://github.com/fresns/dto/issues",
+        "source": "https://github.com/fresns/dto"
+    },
+    "authors": [
+        {
+            "name": "Jarvis Tang",
+            "email": "jarvis.okay@gmail.com",
+            "homepage": "https://github.com/jarvis-tang",
+            "role": "Creator"
+        },
+        {
+            "name": "mouyong",
+            "email": "my24251325@gmail.com",
+            "homepage": "https://github.com/mouyong",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0|^8.0",
+        "overtrue/validation": "^2.0",
+        "illuminate/support": "^5.2|^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.2",
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "brainmaestro/composer-git-hooks": "^2.7",
+        "phpunit/phpunit": "^8",
+        "orchestra/testbench": "^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fresns\\DTO\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fresns\\DTO\\ServiceProvider"
+            ]
+        },
+        "hooks": {
+            "pre-commit": [
+                "composer test",
+                "composer fix-style"
+            ],
+            "pre-push": [
+                "composer test",
+                "composer check-style"
+            ]
+        }
+    },
+    "scripts": {
+        "post-update-cmd": "cghooks update",
+        "post-merge": "composer install",
+        "post-install-cmd": [
+            "cghooks add --ignore-lock",
+            "cghooks update"
+        ],
+        "cghooks": "./vendor/bin/cghooks",
+        "check-style": "./vendor/bin/php-cs-fixer fix --using-cache=no --diff --config=.php_cs --dry-run --ansi",
+        "fix-style": "./vendor/bin/php-cs-fixer fix --using-cache=no --config=.php_cs --ansi",
+        "test": "./vendor/bin/phpunit --colors=always"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests.",
+        "check-style": "Run style checks (only dry run - no fixing!).",
+        "fix-style": "Run style checks and fix violations."
+    }
+}

@@ -1,0 +1,16 @@
+<?php
+
+namespace {{ namespace }};
+
+use Fresns\DTO\DTO;
+
+class {{ class }} extends DTO
+{
+    /**
+    * @return array
+    */
+    public function rules(): array
+    {
+        return [];
+    }
+}
