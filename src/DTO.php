@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * Fresns (https://fresns.org)
+ * Copyright (C) 2021-Present Jarvis Tang
+ * Released under the Apache-2.0 License.
+ */
+
 namespace Fresns\DTO;
 
 use Fresns\DTO\Traits\PayloadTrait;
@@ -23,7 +29,7 @@ abstract class DTO implements Arrayable
     /**
      * DTO constructor.
      *
-     * @param bool $verify
+     * @param  bool  $verify
      *
      * @throws \Throwable
      */
@@ -61,7 +67,7 @@ abstract class DTO implements Arrayable
      */
     public function setOriginData(array $data = [])
     {
-        if (!$data && function_exists('request')) {
+        if (! $data && function_exists('request')) {
             $data = request()->all();
         }
 
@@ -69,11 +75,10 @@ abstract class DTO implements Arrayable
     }
 
     /**
-     * Get parameters
+     * Get parameters.
      *
      * @param $key
-     * @param null $default
-     *
+     * @param  null  $default
      * @return array|\ArrayAccess|mixed
      */
     public function getItem($key, $default = null)
@@ -83,7 +88,6 @@ abstract class DTO implements Arrayable
 
     /**
      * @param $name
-     *
      * @return array|\ArrayAccess|null
      *
      * @throws \Throwable
@@ -94,10 +98,9 @@ abstract class DTO implements Arrayable
     }
 
     /**
-     * Implement isset to prevent empty from failing to detect a value
+     * Implement isset to prevent empty from failing to detect a value.
      *
      * @param $name
-     *
      * @return bool
      */
     public function __isset($name)

@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * Fresns (https://fresns.org)
+ * Copyright (C) 2021-Present Jarvis Tang
+ * Released under the Apache-2.0 License.
+ */
+
 namespace Fresns\DTO\Traits;
 
 use Fresns\DTO\Exceptions\DTOException;
@@ -10,7 +16,7 @@ use Overtrue\Validation\Translator;
 trait ValidatorTrait
 {
     /**
-     * Whether to turn on verify
+     * Whether to turn on verify.
      *
      * @var bool
      */
@@ -21,12 +27,12 @@ trait ValidatorTrait
      */
     public function validate($verify)
     {
-        if (!$verify || empty($this->rules())) {
+        if (! $verify || empty($this->rules())) {
             return;
         }
 
         foreach (['beforeValidate', 'baseValidate', 'afterValidate'] as $validateMethod) {
-            if (!method_exists($this, $validateMethod)) {
+            if (! method_exists($this, $validateMethod)) {
                 continue;
             }
 

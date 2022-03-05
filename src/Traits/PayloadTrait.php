@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * Fresns (https://fresns.org)
+ * Copyright (C) 2021-Present Jarvis Tang
+ * Released under the Apache-2.0 License.
+ */
+
 namespace Fresns\DTO\Traits;
 
 use Fresns\DTO\Exceptions\DTOException;
@@ -24,7 +30,7 @@ trait PayloadTrait
 
     protected function fillable(): array
     {
-        if (!$this->attributes) {
+        if (! $this->attributes) {
             $rules = method_exists($this, 'rules') ?
                 array_keys($this->rules()) :
                 [];
@@ -48,7 +54,7 @@ trait PayloadTrait
 
         foreach ($payload as $key => $val) {
             // If the key value does not exist, then skip
-            if (!in_array($key, $this->fillable())) {
+            if (! in_array($key, $this->fillable())) {
                 continue;
             }
 
@@ -58,7 +64,6 @@ trait PayloadTrait
 
     /**
      * @param $name
-     *
      * @return mixed|null
      */
     protected function getAttribute($name)
@@ -69,7 +74,7 @@ trait PayloadTrait
             return call_user_func([$this, $method]);
         }
 
-        if (!array_key_exists($name, $this->payload) && !in_array($name, $this->fillable())) {
+        if (! array_key_exists($name, $this->payload) && ! in_array($name, $this->fillable())) {
             throw new DTOException(sprintf('%s attribute is not defined', $name));
         }
 
