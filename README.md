@@ -9,13 +9,15 @@
 
 Fresns **data transfer object** extension package for easy generation of data rules and inspection of transfer data. Works with **Laravel** projects.
 
-## Installing
+## Install
 
-```shell
-$ composer require fresns/dto
+To install through Composer, by run the following command:
+
+```bash
+composer require fresns/dto
 ```
 
-## 生成DTO
+## Generate DTO
 
 ```php
 // Generate a new DTO (path: /app/DTO/)
