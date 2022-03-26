@@ -27,6 +27,10 @@ php artisan make:dto BaseDTO
 php artisan make:dto BaseDTO --path /app/Fresns/Panel
 ```
 
+See the Laravel documentation for the rules that can be used for validation.
+
+[https://laravel.com/docs/9.x/validation#available-validation-rules](https://laravel.com/docs/9.x/validation#available-validation-rules)
+
 ## Contributing
 
 You can contribute in one of three ways:
