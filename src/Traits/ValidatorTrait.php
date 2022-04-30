@@ -10,8 +10,6 @@ namespace Fresns\DTO\Traits;
 
 use Fresns\DTO\Exceptions\DTOException;
 use Illuminate\Contracts\Container\Container;
-use Overtrue\Validation\Factory;
-use Overtrue\Validation\Translator;
 
 trait ValidatorTrait
 {
@@ -64,6 +62,6 @@ trait ValidatorTrait
             return app(\Illuminate\Contracts\Validation\Factory::class);
         }
 
-        return new Factory(new Translator());
+        return \validator();
     }
 }
