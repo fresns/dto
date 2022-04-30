@@ -1,11 +1,17 @@
 <?php
 
+/*
+ * Fresns (https://fresns.org)
+ * Copyright (C) 2021-Present Jarvis Tang
+ * Released under the Apache-2.0 License.
+ */
+
 namespace Fresns\DTO\Validate;
 
-use Illuminate\Translation;
-use Illuminate\Validation\Factory;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Translation;
 use Illuminate\Translation\Translator;
+use Illuminate\Validation\Factory;
 
 /**
  * @mixin Factory
@@ -41,13 +47,14 @@ class ValidatorFactory
     public function getLangPath()
     {
         // webman
-        if (is_null($this->langPath) && !class_exists(\Illuminate\Foundation\Application::class)) {
-            $this->langPath = base_path() . '/resource/translations';
+        if (is_null($this->langPath) && ! class_exists(\Illuminate\Foundation\Application::class)) {
+            $this->langPath = base_path().'/resource/translations';
         }
         // laravel
-        else if (is_null($this->langPath) && class_exists(\Illuminate\Foundation\Application::class)) {
-            $this->langPath = base_path() . '/resources/lang';
+        elseif (is_null($this->langPath) && class_exists(\Illuminate\Foundation\Application::class)) {
+            $this->langPath = base_path().'/resources/lang';
         }
+
         return $this->langPath;
     }
 
@@ -65,7 +72,6 @@ class ValidatorFactory
 
     public function __call(string $method, array $args)
     {
-
         return call_user_func_array([$this->getFactory(), $method], $args);
     }
 }
