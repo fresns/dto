@@ -25,8 +25,8 @@
     ],
     "require": {
         "php": "^7.0|^8.0",
-        "overtrue/validation": "^2.0",
-        "illuminate/support": "^5.2|^6.0|^7.0|^8.0"
+        "illuminate/support": "*",
+        "illuminate/validation": "*"
     },
     "require-dev": {
         "mockery/mockery": "^1.2",
@@ -38,7 +38,10 @@
     "autoload": {
         "psr-4": {
             "Fresns\\DTO\\": "src/"
-        }
+        },
+        "files": [
+            "./src/Validate/helper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
