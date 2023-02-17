@@ -29,10 +29,10 @@
         "illuminate/validation": "*"
     },
     "require-dev": {
-        "mockery/mockery": "^1.2",
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "brainmaestro/composer-git-hooks": "^2.7",
-        "phpunit/phpunit": "^8",
+        "mockery/mockery": "^1.5",
+        "friendsofphp/php-cs-fixer": "^3.14",
+        "brainmaestro/composer-git-hooks": "^2.8",
+        "phpunit/phpunit": "^9",
         "orchestra/testbench": "^6"
     },
     "autoload": {
