@@ -23,7 +23,7 @@ trait ValidatorTrait
     /**
      * @param $verify
      */
-    public function validate($verify)
+    public function validate($verify): void
     {
         if (! $verify || empty($this->rules())) {
             return;
@@ -44,7 +44,7 @@ trait ValidatorTrait
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      * @throws \Throwable
      */
-    public function baseValidate($origin)
+    public function baseValidate($origin): void
     {
         $validator = $this->getValidator()->make($origin, $this->rules());
 

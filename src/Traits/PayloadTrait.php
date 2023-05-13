@@ -41,7 +41,7 @@ trait PayloadTrait
         return $this->attributes;
     }
 
-    protected function setPayload(array $payload = [])
+    protected function setPayload(array $payload = []): void
     {
         $payload = $payload ?: $this->origin;
 
@@ -64,9 +64,8 @@ trait PayloadTrait
 
     /**
      * @param $name
-     * @return mixed|null
      */
-    protected function getAttribute($name)
+    protected function getAttribute($name): mixed
     {
         $method = 'get'.ucfirst(Str::camel($name)).'Attribute';
 
@@ -85,7 +84,7 @@ trait PayloadTrait
      * @param $name
      * @param $val
      */
-    protected function setAttribute($name, $val)
+    protected function setAttribute($name, $val): void
     {
         $method = 'set'.ucfirst(Str::camel($name)).'Attribute';
 

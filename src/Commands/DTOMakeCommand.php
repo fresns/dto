@@ -20,8 +20,6 @@ class DTOMakeCommand extends GeneratorCommand
 
     /**
      * This function returns the path to the DTO stub file.
-     *
-     * @return The stub file.
      */
     protected function getStub(): string
     {
@@ -37,9 +35,8 @@ class DTOMakeCommand extends GeneratorCommand
      * default namespace is the root namespace + DTO.
      *
      * @param rootNamespace The namespace of the project.
-     * @return The namespace for the DTO.
      */
-    protected function getDefaultNamespace($rootNamespace)
+    protected function getDefaultNamespace($rootNamespace): string
     {
         if ($this->option('path')) {
             return $rootNamespace;
@@ -53,9 +50,8 @@ class DTOMakeCommand extends GeneratorCommand
      * the parent class' getPath function is used.
      *
      * @param name The name of the class being generated.
-     * @return The path to the file that will be created.
      */
-    protected function getPath($name)
+    protected function getPath($name): string
     {
         if ($path = $this->option('path')) {
             $name = Str::replaceFirst($this->rootNamespace(), '', $name);
