@@ -13,9 +13,6 @@ use Fresns\DTO\Traits\ValidatorTrait;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Arr;
 
-/**
- * Class DTO.
- */
 abstract class DTO implements Arrayable
 {
     use ValidatorTrait;
@@ -67,10 +64,16 @@ abstract class DTO implements Arrayable
         return $this->origin;
     }
 
-    /**
-     * @return void
-     */
-    public function setOriginData(array $data = [])
+    public function isEmpty(): bool
+    {
+        if (empty($this->origin)) {
+            return true;
+        }
+
+        return empty(array_filter($this->origin));
+    }
+
+    public function setOriginData(array $data = []): void
     {
         if (! $data && function_exists('request')) {
             $data = request()->all();
