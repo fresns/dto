@@ -4,10 +4,11 @@
     "description": "Fresns data transfer object extension package for easy generation of data rules and inspection of transfer data. Works with Laravel projects.",
     "keywords": ["fresns", "dto", "laravel-dto"],
     "license": "Apache-2.0",
-    "homepage": "https://fresns.org",
+    "homepage": "https://pm.fresns.org/dto/",
     "support": {
         "issues": "https://github.com/fresns/dto/issues",
-        "source": "https://github.com/fresns/dto"
+        "source": "https://github.com/fresns/dto",
+        "docs": "https://pm.fresns.org/dto/"
     },
     "authors": [
         {
