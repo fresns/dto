@@ -9,6 +9,8 @@
 
 Fresns **data transfer object** extension package for easy generation of data rules and inspection of transfer data. Works with **Laravel** projects.
 
+- Guide: [https://pm.fresns.org/dto/](https://pm.fresns.org/dto/)
+
 ## Install
 
 To install through Composer, by run the following command:
