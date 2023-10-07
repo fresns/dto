@@ -42,7 +42,7 @@ abstract class DTO implements Arrayable
     }
 
     /**
-     * @param $verify
+     * @param  $verify
      *
      * @throws \Throwable
      */
@@ -85,7 +85,7 @@ abstract class DTO implements Arrayable
     /**
      * Get parameters.
      *
-     * @param $key
+     * @param  $key
      * @param  null  $default
      * @return array|\ArrayAccess|mixed
      */
@@ -95,7 +95,7 @@ abstract class DTO implements Arrayable
     }
 
     /**
-     * @param $name
+     * @param  $name
      * @return array|\ArrayAccess|null
      *
      * @throws \Throwable
@@ -108,7 +108,7 @@ abstract class DTO implements Arrayable
     /**
      * Implement isset to prevent empty from failing to detect a value.
      *
-     * @param $name
+     * @param  $name
      * @return bool
      */
     public function __isset($name)

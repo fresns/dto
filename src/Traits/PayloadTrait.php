@@ -63,7 +63,7 @@ trait PayloadTrait
     }
 
     /**
-     * @param $name
+     * @param  $name
      */
     protected function getAttribute($name): mixed
     {
@@ -81,8 +81,8 @@ trait PayloadTrait
     }
 
     /**
-     * @param $name
-     * @param $val
+     * @param  $name
+     * @param  $val
      */
     protected function setAttribute($name, $val): void
     {

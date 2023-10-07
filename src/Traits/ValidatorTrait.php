@@ -21,7 +21,7 @@ trait ValidatorTrait
     protected $verify = true;
 
     /**
-     * @param $verify
+     * @param  $verify
      */
     public function validate($verify): void
     {
@@ -39,7 +39,7 @@ trait ValidatorTrait
     }
 
     /**
-     * @param $origin
+     * @param  $origin
      *
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      * @throws \Throwable
