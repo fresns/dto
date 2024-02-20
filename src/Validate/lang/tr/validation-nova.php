@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Bu :attribute zaten tanımlı.',
+    'attached' => 'Bu :attribute zaten tanımlı.',
     'relatable' => 'Bu :attribute bu kaynakla ilişkili olmayabilir.',
 ];

@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => '此字段已附加。',
+    'attached' => '此字段已附加。',
     'relatable' => '此字段可能與此資源不相關聯。',
 ];

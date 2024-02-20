@@ -7,6 +7,6 @@
  */
 
 return [
-    'next'     => 'Далі &raquo;',
+    'next' => 'Далі &raquo;',
     'previous' => '&laquo; Назад',
 ];

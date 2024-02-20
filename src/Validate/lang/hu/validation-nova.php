@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Ezt a :attribute-at már csatolták.',
+    'attached' => 'Ezt a :attribute-at már csatolták.',
     'relatable' => 'Lehet, hogy ez az :attribute nem kapcsolódik ehhez az erőforráshoz.',
 ];

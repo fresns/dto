@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Бұл нөмір :attribute тіркелген.',
+    'attached' => 'Бұл нөмір :attribute тіркелген.',
     'relatable' => 'Бұл :attribute осы ресурсқа байланысты болмауы мүмкін.',
 ];

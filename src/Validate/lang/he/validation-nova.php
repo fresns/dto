@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'ה-:attribute הזה כבר מחובר.',
+    'attached' => 'ה-:attribute הזה כבר מחובר.',
     'relatable' => 'זה :attribute לא יכול להיות קשור עם משאב זה.',
 ];

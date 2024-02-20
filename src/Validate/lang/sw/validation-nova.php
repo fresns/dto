@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Hii :attribute ni tayari masharti.',
+    'attached' => 'Hii :attribute ni tayari masharti.',
     'relatable' => 'Hii :attribute inaweza kuwa kuhusishwa na rasilimali hii.',
 ];

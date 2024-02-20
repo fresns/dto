@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Pole jest już dołączone.',
+    'attached' => 'Pole jest już dołączone.',
     'relatable' => 'Ppole nie może być powiązane z tym zasobem.',
 ];

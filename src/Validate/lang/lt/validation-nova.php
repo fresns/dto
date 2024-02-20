@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Šis :attribute jau yra pridėtas.',
+    'attached' => 'Šis :attribute jau yra pridėtas.',
     'relatable' => 'Šis :attribute gali būti nesusijęs su šiuo šaltiniu.',
 ];

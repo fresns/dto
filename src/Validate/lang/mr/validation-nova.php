@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'या :attribute आधीच संलग्न आहे.',
+    'attached' => 'या :attribute आधीच संलग्न आहे.',
     'relatable' => 'या :attribute या संसाधन संबंधित जाऊ शकत नाही.',
 ];

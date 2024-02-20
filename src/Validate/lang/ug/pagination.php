@@ -7,6 +7,6 @@
  */
 
 return [
-    'next'     => 'كىيىنكى بەت &raquo;',
+    'next' => 'كىيىنكى بەت &raquo;',
     'previous' => '&laquo; ئالدىنقى بەت',
 ];

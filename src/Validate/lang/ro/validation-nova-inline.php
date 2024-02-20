@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Acest câmp este deja atașat.',
+    'attached' => 'Acest câmp este deja atașat.',
     'relatable' => 'Este posibil ca acest câmp să nu fie asociat cu această resursă.',
 ];

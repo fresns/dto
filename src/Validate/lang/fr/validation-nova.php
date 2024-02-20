@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => ':attribute est déjà attaché(e).',
+    'attached' => ':attribute est déjà attaché(e).',
     'relatable' => ':attribute n\'est sans doute pas associé(e) avec cette donnée.',
 ];

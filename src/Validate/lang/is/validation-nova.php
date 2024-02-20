@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Þetta :attribute er nú þegar fylgir.',
+    'attached' => 'Þetta :attribute er nú þegar fylgir.',
     'relatable' => 'Þetta :attribute getur ekki tengst þessu úrræði.',
 ];

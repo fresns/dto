@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Neste campo xa está conectado.',
+    'attached' => 'Neste campo xa está conectado.',
     'relatable' => 'Este campo pode non ser asociado a este recurso.',
 ];

@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Bu :attribute artıq əlavə olunur.',
+    'attached' => 'Bu :attribute artıq əlavə olunur.',
     'relatable' => 'Bu :attribute il bu resurs ilə bağlı ola bilər.',
 ];

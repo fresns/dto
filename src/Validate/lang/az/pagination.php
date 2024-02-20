@@ -7,6 +7,6 @@
  */
 
 return [
-    'next'     => 'Sonra &raquo;',
+    'next' => 'Sonra &raquo;',
     'previous' => '&laquo; Əvvəl',
 ];

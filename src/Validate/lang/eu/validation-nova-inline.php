@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Eremu hau da, dagoeneko erantsita.',
+    'attached' => 'Eremu hau da, dagoeneko erantsita.',
     'relatable' => 'Eremu honetan ezin izango da lotutako baliabide hau.',
 ];

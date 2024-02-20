@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Ovo polje je već spojeno.',
+    'attached' => 'Ovo polje je već spojeno.',
     'relatable' => 'Ovo polje možda nije povezano sa ovim resursom.',
 ];

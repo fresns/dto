@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Bu sahə artıq əlavə olunur.',
+    'attached' => 'Bu sahə artıq əlavə olunur.',
     'relatable' => 'Bu sahədə bu resurs ilə bağlı ola bilər.',
 ];

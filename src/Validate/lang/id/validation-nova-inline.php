@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Isian ini sudah dilampirkan.',
+    'attached' => 'Isian ini sudah dilampirkan.',
     'relatable' => 'Isian ini mungkin tidak berasosiasi dengan sumber ini.',
 ];

@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Ovaj :attribute je već spojen.',
+    'attached' => 'Ovaj :attribute je već spojen.',
     'relatable' => 'Ova :attribute možda nema veze sa ovim resursom.',
 ];

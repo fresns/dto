@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Mae\'r maes hwn eisoes yn ynghlwm.',
+    'attached' => 'Mae\'r maes hwn eisoes yn ynghlwm.',
     'relatable' => 'Y maes hwn gall nid yw fod yn gysylltiedig â\'r adnodd hwn.',
 ];

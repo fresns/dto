@@ -7,6 +7,6 @@
  */
 
 return [
-    'next'     => 'Дараах &raquo;',
+    'next' => 'Дараах &raquo;',
     'previous' => '&laquo; Өмнөх',
 ];

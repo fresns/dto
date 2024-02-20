@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Овај :attribute је већ причвршћен.',
+    'attached' => 'Овај :attribute је већ причвршћен.',
     'relatable' => 'Овај :attribute можда није повезан са овим ресурсом.',
 ];

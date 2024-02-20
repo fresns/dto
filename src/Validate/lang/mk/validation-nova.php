@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Оваа :attribute е веќе прикачен.',
+    'attached' => 'Оваа :attribute е веќе прикачен.',
     'relatable' => 'Оваа :attribute може да не биде поврзана со овој ресурс.',
 ];

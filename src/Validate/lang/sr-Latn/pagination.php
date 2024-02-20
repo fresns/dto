@@ -7,6 +7,6 @@
  */
 
 return [
-    'next'     => 'Napred &raquo;',
+    'next' => 'Napred &raquo;',
     'previous' => '&laquo; Nazad',
 ];

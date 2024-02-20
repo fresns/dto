@@ -7,6 +7,6 @@
  */
 
 return [
-    'attached'  => 'Trường :attribute đã được đính kèm.',
+    'attached' => 'Trường :attribute đã được đính kèm.',
     'relatable' => 'Trường :attribute không thể liên kết với tài nguyên này.',
 ];

@@ -18,6 +18,6 @@ return [
     |
     */
 
-    'attached'  => 'This field is already attached.',
+    'attached' => 'This field is already attached.',
     'relatable' => 'This field may not be associated with this resource.',
 ];
