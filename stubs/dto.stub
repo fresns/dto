@@ -8,6 +8,8 @@ class {{ class }} extends DTO
 {
     public function rules(): array
     {
-        return [];
+        return [
+            //
+        ];
     }
 }

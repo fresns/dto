@@ -2,7 +2,7 @@
     "name": "fresns/dto",
     "type": "library",
     "description": "Fresns data transfer object extension package for easy generation of data rules and inspection of transfer data. Works with Laravel projects.",
-    "keywords": ["fresns", "dto", "laravel-dto"],
+    "keywords": ["fresns", "dto", "laravel-dto", "data-transfer-object"],
     "license": "Apache-2.0",
     "homepage": "https://pm.fresns.org/dto/",
     "support": {
@@ -54,33 +54,6 @@
             "providers": [
                 "Fresns\\DTO\\ServiceProvider"
             ]
-        },
-        "hooks": {
-            "pre-commit": [
-                "composer test",
-                "composer fix-style"
-            ],
-            "pre-push": [
-                "composer test",
-                "composer check-style"
-            ]
         }
-    },
-    "scripts": {
-        "post-update-cmd": "cghooks update",
-        "post-merge": "composer install",
-        "post-install-cmd": [
-            "cghooks add --ignore-lock",
-            "cghooks update"
-        ],
-        "cghooks": "./vendor/bin/cghooks",
-        "check-style": "./vendor/bin/php-cs-fixer fix --using-cache=no --diff --config=.php_cs --dry-run --ansi",
-        "fix-style": "./vendor/bin/php-cs-fixer fix --using-cache=no --config=.php_cs --ansi",
-        "test": "./vendor/bin/phpunit --colors=always"
-    },
-    "scripts-descriptions": {
-        "test": "Run all tests.",
-        "check-style": "Run style checks (only dry run - no fixing!).",
-        "fix-style": "Run style checks and fix violations."
     }
 }
