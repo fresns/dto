@@ -8,7 +8,7 @@
 
 namespace Fresns\DTO\Traits;
 
-use Fresns\DTO\Exceptions\DTOException;
+use Fresns\DTO\Exceptions\ResponseException;
 use Illuminate\Contracts\Container\Container;
 
 trait ValidatorTrait
@@ -49,7 +49,7 @@ trait ValidatorTrait
         $validator = $this->getValidator()->make($origin, $this->rules());
 
         if ($validator->fails()) {
-            throw new DTOException($validator->errors()->first());
+            throw new ResponseException($validator->errors()->first());
         }
     }
 

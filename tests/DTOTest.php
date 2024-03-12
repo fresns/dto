@@ -9,7 +9,7 @@
 namespace Tests;
 
 use Fresns\DTO\DTO;
-use Fresns\DTO\Exceptions\DTOException;
+use Fresns\DTO\Exceptions\ResponseException;
 use Fresns\DTO\ServiceProvider;
 use Illuminate\Filesystem\Filesystem;
 
@@ -69,7 +69,7 @@ class DTOTest extends TestCase
 
     public function testBaseDTOException()
     {
-        $this->expectException(DTOException::class);
+        $this->expectException(ResponseException::class);
 
         $dto = new BaseDTO();
     }
