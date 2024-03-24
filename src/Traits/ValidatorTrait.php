@@ -8,11 +8,12 @@
 
 namespace Fresns\DTO\Traits;
 
-use Fresns\DTO\Exceptions\ResponseException;
 use Illuminate\Contracts\Container\Container;
 
 trait ValidatorTrait
 {
+    use ResponseTrait;
+
     /**
      * Whether to turn on verify.
      *
@@ -49,7 +50,7 @@ trait ValidatorTrait
         $validator = $this->getValidator()->make($origin, $this->rules());
 
         if ($validator->fails()) {
-            throw new ResponseException($validator->errors()->first());
+            $this->failure($validator->errors()->first());
         }
     }
 

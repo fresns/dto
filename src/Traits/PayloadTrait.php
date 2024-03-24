@@ -8,11 +8,12 @@
 
 namespace Fresns\DTO\Traits;
 
-use Fresns\DTO\Exceptions\ResponseException;
 use Illuminate\Support\Str;
 
 trait PayloadTrait
 {
+    use ResponseTrait;
+
     /**
      * @var array
      */
@@ -74,7 +75,7 @@ trait PayloadTrait
         }
 
         if (! array_key_exists($name, $this->payload) && ! in_array($name, $this->fillable())) {
-            throw new ResponseException(sprintf('%s attribute is not defined', $name));
+            $this->failure(sprintf('%s attribute is not defined', $name));
         }
 
         return $this->payload[$name] ?? null;
