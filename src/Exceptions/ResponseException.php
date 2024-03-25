@@ -13,7 +13,7 @@ class ResponseException extends \Exception
     public function render()
     {
         return response()->json([
-            'code' => 20000,
+            'code' => 10000,
             'message' => $this->getMessage(),
             'data' => null,
         ]);

@@ -14,7 +14,7 @@ trait ResponseTrait
 {
     public function failure(?string $message = null)
     {
-        $code = 20000;
+        $code = 10000;
         $message = $message ?: 'DTO Unknown Error';
 
         if (request()->wantsJson()) {
