@@ -11,6 +11,10 @@ Fresns **data transfer object** extension package for easy generation of data ru
 
 - Guide: [https://pm.fresns.org/dto/](https://pm.fresns.org/dto/)
 
+## Sponsors
+
+Fresns is an Apache-2.0-licensed open source project with its ongoing development made possible entirely by the support of these awesome backers. If you'd like to join them, please consider [sponsoring Fresns development](https://github.com/sponsors/fresns).
+
 ## Install
 
 To install through Composer, by run the following command:
